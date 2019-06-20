@@ -108,7 +108,7 @@ with open(csvpath, newline="") as csvfile:
              "Greatest Increase in Projects: {} {}\nGreatest Decrease in Projects: {} {}"
     print(message.format(total_months,total_profit_loss,average_change,max_change_date,max_change,min_change_date, min_change))
 
-    budget_file = open('budget_update.csv', 'w', newline='')
+    budget_file = open('budget_update.csv', 'w')
     budget_file.write("Financial Analysis" + "\n")
     budget_file.write("----------------------------------------" + "\n")
     budget_file.write(f"Total Months: {total_months}" + "\n")
