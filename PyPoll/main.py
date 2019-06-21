@@ -120,7 +120,7 @@ with open(csvpath, newline="") as csvfile:
 
     print(        "W I N N E R   "  + winner)
 
-    vote_file = open('new_election_data.txt', 'w', newline='')
+    vote_file = open('new_election_data.txt', 'w')
     vote_file.write("Election Results " +  "\n") 
     vote_file.write(f"----------------------------------------" + "\n")
     vote_file.write(f"Total Votes:{total_votes}" + "\n")
